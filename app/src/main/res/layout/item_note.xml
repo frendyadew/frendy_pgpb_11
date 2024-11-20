@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <!-- Judul Catatan -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Tanggal Catatan -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tombol Edit dan Hapus -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Edit"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
